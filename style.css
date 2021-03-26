@@ -1,0 +1,104 @@
+body {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.container {
+  margin-top: 2%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  height: 95vh;
+  background-color: gray;
+  border-radius: 1rem;
+}
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0 0 1rem 1rem;
+  width: 40vw;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  font-size: 4rem;
+}
+#playerScore,
+#enemyScore,
+#between {
+  display: inline-block;
+}
+
+.game {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-radius: 1rem;
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+}
+
+span {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-row: 1;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  max-width: 100%;
+  overflow: hidden;
+}
+.selections:hover {
+  background-color: black;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+
+.enemy .player {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  font-size: 50px;
+  background-color: turquoise;
+}
+
+h2 {
+  margin: 1rem;
+  text-align: center;
+}
+
+.unclickable {
+  pointer-events: none;
+}
+
+.rules {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0;
+  }
+  span {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-row: 1;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+
+    overflow: hidden;
+  }
+}
